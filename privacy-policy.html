@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Bharosa365</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #ff6b35;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo::before {
+            content: "🛡️";
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b35;
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 120px 0 60px;
+            min-height: 100vh;
+        }
+
+        .privacy-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .privacy-header {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .privacy-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .privacy-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .last-updated {
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .privacy-content {
+            padding: 60px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .privacy-content h2 {
+            color: #ff6b35;
+            font-size: 1.8rem;
+            margin: 40px 0 20px 0;
+            font-weight: 700;
+            border-bottom: 2px solid #ff6b35;
+            padding-bottom: 10px;
+        }
+
+        .privacy-content h3 {
+            color: #333;
+            font-size: 1.3rem;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+
+        .privacy-content p {
+            margin-bottom: 15px;
+            color: #555;
+            text-align: justify;
+        }
+
+        .privacy-content ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        .privacy-content li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+
+        .contact-btn {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .toc h3 {
+            color: #ff6b35;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: #ff6b35;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ff6b35;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #555;
+            padding-top: 2rem;
+            color: #ccc;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .privacy-header {
+                padding: 40px 20px;
+            }
+
+            .privacy-header h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-content {
+                padding: 40px 20px;
+            }
+
+            .contact-section {
+                padding: 30px 20px;
+            }
+
+            .toc {
+                padding: 20px;
+            }
+        }
+
+        /* Scroll Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            z-index: 10000;
+            transition: width 0.3s ease;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Highlight sections */
+        .highlight-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff6b35;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box h4 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Bharosa365</a>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#how-it-works">How it Works</a></li>
+                <li><a href="index.html#users">Who's it For</a></li>
+                <li><a href="index.html#trust">Trust & Privacy</a></li>
+            </ul>
+            <a href="index.html#download" class="download-btn">Download Now</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="privacy-container">
+                <div class="privacy-header">
+                    <h1>🔒 Privacy Policy</h1>
+                    <p>Your privacy is our priority. Learn how we protect your personal information and maintain your trust.</p>
+                    <div class="last-updated">Last updated: June 29, 2025</div>
+                </div>
+
+                <div class="privacy-content">
+                    <div class="toc">
+                        <h3>📋 Table of Contents</h3>
+                        <ul>
+                            <li><a href="#introduction">1. Introduction</a></li>
+                            <li><a href="#definitions">2. Definitions</a></li>
+                            <li><a href="#data-collection">3. Data Collection</a></li>
+                            <li><a href="#data-usage">4. How We Use Your Data</a></li>
+                            <li><a href="#data-sharing">5. Data Sharing</a></li>
+                            <li><a href="#data-retention">6. Data Retention</a></li>
+                            <li><a href="#your-rights">7. Your Rights</a></li>
+                            <li><a href="#security">8. Security</a></li>
+                            <li><a href="#children">9. Children's Privacy</a></li>
+                            <li><a href="#contact">10. Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <section id="introduction">
+                        <h2>📖 Introduction</h2>
+                        <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+                        <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+                    </section>
+
+                    <section id="definitions">
+                        <h2>📚 Definitions</h2>
+                        <p>For the purposes of this Privacy Policy:</p>
+                        <ul>
+                            <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
+                            <li><strong>Application</strong> refers to Bharosa365, the software program provided by the Company.</li>
+                            <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our") refers to FINDVEND SOLUTIONS (OPC) PRIVATE LIMITED, Ground Floor, 16-11-16/c/b, Plot No. 210, Sripuram, Colony, Malakpet, Behind RTO Office Malakpet, Teegalguda Hyderabad - 500036 India (IN).</li>
+                            <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
+                            <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
+                            <li><strong>Service</strong> refers to the Application.</li>
+                            <li><strong>You</strong> means the individual accessing or using the Service.</li>
+                        </ul>
+                    </section>
+
+                    <section id="data-collection">
+                        <h2>📊 Data Collection</h2>
+                        
+                        <h3>Personal Data</h3>
+                        <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
+                        <ul>
+                            <li>Email address</li>
+                            <li>First name and last name</li>
+                            <li>Phone number</li>
+                        </ul>
+
+                        <h3>Usage Data</h3>
+                        <p>Usage Data is collected automatically when using the Service. This may include information such as Your Device's Internet Protocol address (IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+
+                        <div class="highlight-box">
+                            <h4>🛡️ Privacy-First Approach</h4>
+                            <p>While using Our Application, we may collect information from your Device's phone book (contacts list) with Your prior permission. This information is used solely to provide features of Our Service and may be stored on Your device or uploaded to secure servers. You can enable or disable access to this information at any time through Your Device settings.</p>
+                        </div>
+                    </section>
+
+                    <section id="data-usage">
+                        <h2>🎯 How We Use Your Data</h2>
+                        <p>The Company may use Personal Data for the following purposes:</p>
+                        <ul>
+                            <li><strong>To provide and maintain our Service</strong>, including monitoring the usage of our Service.</li>
+                            <li><strong>To manage Your Account</strong> and provide access to different functionalities available to registered users.</li>
+                            <li><strong>To contact You</strong> via email, telephone calls, SMS, or push notifications regarding updates or important communications.</li>
+                            <li><strong>To provide news and offers</strong> about goods and services similar to those you have purchased or enquired about (unless you opt out).</li>
+                            <li><strong>To manage Your requests</strong> and provide customer support.</li>
+                            <li><strong>For data analysis</strong> to identify usage trends and improve our Service.</li>
+                        </ul>
+                    </section>
+
+                    <section id="data-sharing">
+                        <h2>🤝 Data Sharing</h2>
+                        <p>We may share Your personal information in the following situations:</p>
+                        <ul>
+                            <li><strong>With Service Providers:</strong> To monitor and analyze the use of our Service and to contact You.</li>
+                            <li><strong>For business transfers:</strong> In connection with mergers, acquisitions, or asset sales.</li>
+                            <li><strong>With Affiliates:</strong> We may share Your information with Our affiliates who must honor this Privacy Policy.</li>
+                            <li><strong>With business partners:</strong> To offer You certain products, services or promotions.</li>
+                            <li><strong>With Your consent:</strong> We may disclose Your personal information for any other purpose with Your consent.</li>
+                        </ul>
+                    </section>
+
+                    <section id="data-retention">
+                        <h2>⏰ Data Retention</h2>
+                        <p>The Company will retain Your Personal Data only for as long as necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to comply with legal obligations, resolve disputes, and enforce our agreements.</p>
+                        <p>Usage Data is generally retained for a shorter period, except when used to strengthen security or improve functionality, or when legally required to retain data for longer periods.</p>
+                    </section>
+
+                    <section id="your-rights">
+                        <h2>⚖️ Your Rights</h2>
+                        <div class="highlight-box">
+                            <h4>🔑 You Have the Right To:</h4>
+                            <ul>
+                                <li><strong>Access:</strong> Request access to your personal data</li>
+                                <li><strong>Correct:</strong> Update or correct your personal information</li>
+                                <li><strong>Delete:</strong> Request deletion of your personal data</li>
+                                <li><strong>Withdraw consent:</strong> Withdraw consent where we rely on it</li>
+                                <li><strong>Data portability:</strong> Request transfer of your data</li>
+                            </ul>
+                        </div>
+                        <p>You may update, amend, or delete Your information at any time by signing in to Your Account and visiting the account settings section. You may also contact Us to exercise these rights.</p>
+                    </section>
+
+                    <section id="security">
+                        <h2>🔐 Security of Your Personal Data</h2>
+                        <p>The security of Your Personal Data is important to Us. While We strive to use commercially acceptable means to protect Your Personal Data, remember that no method of transmission over the Internet or electronic storage is 100% secure. We cannot guarantee absolute security, but we implement industry-standard security measures.</p>
+                    </section>
+
+                    <section id="children">
+                        <h2>👶 Children's Privacy</h2>
+                        <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under 13. If You are a parent or guardian and aware that Your child has provided Us with Personal Data, please contact Us immediately.</p>
+                        <p>If We become aware that We have collected Personal Data from anyone under 13 without parental consent, We take steps to remove that information from Our servers.</p>
+                    </section>
+
+                    <section id="changes">
+                        <h2>🔄 Changes to This Privacy Policy</h2>
+                        <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+                        <p>We will let You know via email and/or a prominent notice on Our Service prior to the change becoming effective. You are advised to review this Privacy Policy periodically for any changes.</p>
+                    </section>
+
+                    <div class="contact-section" id="contact">
+                        <h3>📞 Questions About This Policy?</h3>
+                        <p>If you have any questions about this Privacy Policy, please don't hesitate to contact us. We're here to help and ensure your privacy is protected.</p>
+                        <a href="http://pmodesk.com/conatct-us.html" class="contact-btn">📧 Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🛡️ Bharosa365</h3>
+                    <p>India's first AI-powered scam protection app. Protecting millions of Indians from digital fraud.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#how-it-works">How it Works</a>
+                    <a href="#top">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a href="#">Help Center</a>
+                    <a href="http://pmodesk.com/conatct-us.html">Contact Us</a>
+                    <a href="#">Report Scam</a>
+                    <a href="#">Business Inquiries</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bharosa365. Made in India 🇮🇳 with ❤️ for digital safety.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollProgress = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            document.getElementById('progressBar').style.width = scrollProgress + '%';
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Highlight current section in TOC
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.offsetHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.style.color = '#555';
+                link.style.fontWeight = '400';
+                if (link.getAttribute('href') === '#' + current) {
+                    link.style.color = '#ff6b35';
+                    link.style.fontWeight = '600';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
